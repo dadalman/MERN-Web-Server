@@ -11,6 +11,9 @@ const app = express();
 dotenv.config({ path : './config.env' });
 require('./db/conn');
 
+// Require Model
+const Users = require('./models/userSchema');
+
 app.get('/', (req, res)=>{
     res.send("Hello World!");
 })

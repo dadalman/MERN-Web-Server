@@ -7,10 +7,13 @@ const cookieParser = require('cookie-parser');
 
 const app = express();
 
+// Configure ENV file & Require Connection File
+dotenv.config({ path : './config.env' });
+require('./db/conn');
+
 app.get('/', (req, res)=>{
     res.send("Hello World!");
 })
-
 
 // Run Server
 let port = 3001;

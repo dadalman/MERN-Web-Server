@@ -86,3 +86,7 @@ app.post("/register", async (req, res) => {
 app.listen(port, () => {
     console.log("Server is listening at port:", port);
 }) 
+
+
+// Our backend is done and can be stored in the database
+// Now its time to connect frontend with the backend 
